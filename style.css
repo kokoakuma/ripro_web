@@ -1,7 +1,7 @@
 *{margin:0; padding: 0;font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;}
 a,a:link, a:hover, a:visited{color:white; text-decoration: none;}
 span a{color:white}
-/* common className */
+/* common className よく使うcssはまとめて設定、htmlのクラスに指定するだけで適用される */ 
 section{height: 600px;}
 .black{background-color: black;color: white;}
 .white{background-color: white;color: black;}
@@ -65,8 +65,8 @@ header h2, header span{
     position: relative;
 }
 .clubName::before{
-	/* 透過した黒を重ねる */
-	background-color: rgba(0,0,0,0.9);
+	/* 透過した黒を重ねて画像を暗くしている*/
+	background-color: rgba(0,0,0,0.7);
 	/* どの範囲に重ねるかを指定 */
 	position: absolute;
 	top: 0;
